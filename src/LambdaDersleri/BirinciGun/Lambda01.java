@@ -2,6 +2,7 @@ package LambdaDersleri.BirinciGun;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class Lambda01 {
@@ -24,10 +25,35 @@ public class Lambda01 {
     System.out.println();
     ciftSayiKareToplam(l);
     System.out.println();
+    tekrarsizCiftKupCarpim(l);
+    System.out.println();
+    tersDuzSıra(l);
+  }
+
+  //7) Listedeki elemanları sıralayarak ve ters sıralayarak yazdır.
+
+  public static void tersDuzSıra(List<Integer> l) {
+    l.stream().sorted().forEach(t -> System.out.print(t + " "));
+    System.out.println();
+    l
+      .stream()
+      .sorted(Comparator.reverseOrder())
+      .forEach(t -> System.out.print(t + " "));
+  }
+
+  //6) Listedeki tekrarli elemanlari silip kaln sayılardan çift olanlarının küplerinin çarpımı
+  public static void tekrarsizCiftKupCarpim(List<Integer> l) {
+    int kup = l
+      .stream()
+      .distinct()
+      .filter(t -> t % 2 == 0)
+      .map(t -> t * t * t)
+      .reduce(1, (x, y) -> x * y);
+
+    System.out.print("Çift sayiların küpünün çarpimi : " + kup);
   }
 
   //5) Lİstedeki tekrarlı elemanları silip çift sayı olanların karelerinin toplamını yazdıran metot oluştur
-
   public static void ciftSayiKareToplam(List<Integer> l) {
     System.out.print(
       l
@@ -82,4 +108,6 @@ public class Lambda01 {
 }
 //3) List teki tek sayıların karelerini yazdıran metod oluşturun
 //4) Listedeki tekrarlı elemanları silip tek sayı olanların küplerini yazdıran metod oluştur
-//5) Lİstedeki tekrarlı elemanları silip çift sayı olanların karelerinin toplamını yazdıran metot oluştur
+//5) Listedeki tekrarlı elemanları silip çift sayı olanların karelerinin toplamını yazdıran metot oluştur
+//6) Listedeki tekrarli elemanlari silip kaln sayılardan çift olanlarının küplerinin çarpımı
+//7) Listedeki elemanları sıralayarak ve ters sıralayarak yazdır.

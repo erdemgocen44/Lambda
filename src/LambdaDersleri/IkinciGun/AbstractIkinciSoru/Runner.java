@@ -21,3 +21,6 @@ public class Runner {
     musteri.alisveris();
   }
 }
+// 5 farkli market, 5 farkli urun alisverisi yapilsin. (Urun fiyatlari farkli olsun) Sonra
+// toplam tutarlari karsilastirsin. En son tum marketlerdeki alisveris fiyatlarini ayri ayri
+// ekrana yazdirin.
