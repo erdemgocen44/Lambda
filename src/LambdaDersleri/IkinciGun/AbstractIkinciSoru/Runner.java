@@ -13,12 +13,11 @@ public class Runner {
     int tercih = scan.nextInt();
     if (tercih == 1) {
       musteri.anaAbstract = new Market();
-      musteri.alisveris();
       System.out.println();
     } else {
       musteri.anaAbstract = new HalkEkmek();
       System.out.println();
-      musteri.alisveris();
     }
+    musteri.alisveris();
   }
 }
