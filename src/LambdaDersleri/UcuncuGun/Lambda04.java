@@ -42,6 +42,18 @@ public class Lambda04 {
     System.out.println();
     onikidenUzunMu(l);
     System.out.println();
+    sondanİkinciSiralaIlk(l);
+    System.out.println();
+  }
+
+  //11) elemanları sondan 2. elemanlarına göre sıralayıp ilk elemanı yazdır
+  public static void sondanİkinciSiralaIlk(List<String> l) {
+    System.out.println(
+      l
+        .stream()
+        .sorted(Comparator.comparing(t -> t.charAt(t.length() - 2)))
+        .findFirst()
+    );
   }
 
   //10) Tüm elemanların uzunluklarının 12'den az olup olmadığını kontrol etmek için bir metod oluşturun
