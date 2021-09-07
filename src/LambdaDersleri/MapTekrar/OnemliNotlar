@@ -1,0 +1,60 @@
+/*
+     1- LinkedListte elamanlar iki kısımdan oluşur(data,adres)
+     
+     2-LinkedListte elemanarın yapısı farklı olduğundan "node" olarak adlandırılırlar.
+     
+     3-LinkedListlerde her zaman en başta "head" vardır. "Head" sadede adres bölümünden oluşur. "Head için data bölmü yoktur.
+     
+     4- LinkedList lerde en son node "Tail" olarak adlandırılır.
+     
+     5- LinkedListler eleman ekleme ve silmede cok başarılıdırlar fakat eleman bulmada başarısızdırlar. Çünkü index kullanmazlar.
+     
+ */
+
+
+     /*
+     hashSet
+      1-Tekrarlı elemana müsaade edilmez. Set lerin içinde bir eleman sadece 1 kere kullanılabilir.
+      
+      2-HashSetler set ler arasında en hızlı olanıdır.
+      
+      3-HashSet elemanları sıralamakla uğraşmaz. Elemanları rastgele dizer.
+      
+      4-HashSet null objesini eleman olarak kullanabilir.
+      
+      
+      */
+
+
+      /*
+
+      Queue
+      bu sisteme fifo (first in first out -->ilk giren ilk çıkar) denir.
+      Elemanlar en sona eklenir ve en baştan silinir.
+      (eczaneler, yemekhaneler bu sistemi kullanır)
+      
+      
+      */
+
+      /*
+      1- TreeSet tekrarlı eleman kabul etmez, çünkü Settir.
+      2-Elemanları natural order'a(String ise alfabetik,sayı ise küçükten büyüğe) göre dizer.
+      3- TreeSet setlerin en yavaşıdır. TreeSet kullanırken dikkatli olun.
+      
+
+      /*
+      interview Sorusu:
+      alfabetik sırada ve tekrarsız bir collection elde etmek için ne kullanırsınız.
+      cevap: TreeSet
+      
+      soru: Ama TreeSet çok yavaştır. Nasılbir çözüm bulabilirsin.
+      cevap: HashSet oluştururum. Elemanları hashSete eklerim. Sonra hashSeti TreeSete çeviririm.
+               böylelikle tekrarsız ve alfabetik sırada bir collection a sahip olurum.
+      */
+      
+      /*
+      1- Double ended queue (deque) : queue larda FIFO geçerli , Deque lerde hem FIFO hem LIFO (last in first out) 
+      
+      */
+
+      /*
