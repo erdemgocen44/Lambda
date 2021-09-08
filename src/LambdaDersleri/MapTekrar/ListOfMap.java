@@ -22,6 +22,6 @@ public class ListOfMap {
     karisik.put("Sebzeler", sebzeler);
     karisik.put("Vitaminler", vitaminler);
 
-    System.out.println(karisik);
+    System.out.println(karisik.get("Sebzeler").get(1));
   }
 }
